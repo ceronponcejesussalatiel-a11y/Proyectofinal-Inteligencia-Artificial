@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inteligencia Artificial - CBTIS 222</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo CBTIS 222" id="logoImg">
+        </div>
+        <h1>Carrera de Inteligencia Artificial</h1>
+        <p class="subtitle">CBTIS 222 - Pachuca, Hidalgo</p>
+        <p class="author">Jesús Salatiel Cerón Ponce - 5AVP</p>
+    </header>
+
+    <div class="container">
+        <div class="navigation">
+            <button class="nav-btn active" onclick="showFrame('inicio')">🏠 Inicio</button>
+            <button class="nav-btn" onclick="showFrame('estadisticas')">📊 Estadísticas</button>
+            <button class="nav-btn" onclick="showFrame('carrera')">🎓 La Carrera</button>
+            <button class="nav-btn" onclick="showFrame('hidalgo')">🌟 Oportunidades Hidalgo</button>
+            <button class="nav-btn" onclick="showFrame('futuro')">🚀 Tu Futuro</button>
+        </div>
+
+        <!-- Frame Inicio -->
+        <div id="inicio" class="frame active">
+            <h2>¿Por qué estudiar Inteligencia Artificial en el CBTIS 222?</h2>
+            <p>
+                La Inteligencia Artificial es una de las áreas tecnológicas más innovadoras y con mayor demanda en el mercado laboral actual. 
+                En el CBTIS 222, ubicado en Pachuca, Hidalgo, ofrecemos una formación integral que combina conocimientos teóricos con práctica profesional, 
+                preparando a nuestros estudiantes para enfrentar los desafíos del futuro digital en México y el mundo.
+            </p>
+
+            <div class="highlight-box">
+                <h4>📍 Nuestra Ubicación Estratégica</h4>
+                <p>El CBTIS 222 se encuentra en Blvd. Felipe Ángeles, Carr. México-Pachuca Km 84.5, Pachuca de Soto, Hidalgo. 
+                Nuestra cercanía a la Ciudad de México y al Aeropuerto Internacional nos posiciona estratégicamente para conectar 
+                con el ecosistema tecnológico más importante del país.</p>
+            </div>
+
+            <div class="images-grid">
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800" alt="Machine Learning">
+                    <div class="image-card-content">
+                        <h4>Machine Learning</h4>
+                        <p>Algoritmos inteligentes que aprenden de los datos</p>
+                    </div>
+                </div>
+
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1555255707-c07966088b7b?w=800" alt="Deep Learning">
+                    <div class="image-card-content">
+                        <h4>Deep Learning</h4>
+                        <p>Redes neuronales profundas de última generación</p>
+                    </div>
+                </div>
+
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800" alt="IA Aplicada">
+                    <div class="image-card-content">
+                        <h4>IA Aplicada</h4>
+                        <p>Soluciones reales para problemas del mundo actual</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Frame Estadísticas -->
+        <div id="estadisticas" class="frame">
+            <h2>Impacto de la IA en el Mercado Laboral</h2>
+            <p>
+                Las estadísticas demuestran el crecimiento exponencial de la Inteligencia Artificial y su impacto positivo 
+                en el mercado laboral global y mexicano. Los profesionales en IA son altamente demandados con salarios competitivos.
+            </p>
+
+            <div class="highlight-box">
+                <h4>💼 Panorama Laboral en México</h4>
+                <p>En México existen más de 390 ofertas laborales activas en Inteligencia Artificial, con empresas 
+                líderes como BBVA, Deloitte, EY, Banorte, y startups tecnológicas buscando constantemente talento especializado.</p>
+            </div>
+
+            <div class="charts-grid">
+                <div class="chart-container">
+                    <canvas id="salaryChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="demandChart"></canvas>
+                </div>
+            </div>
+
+            <div class="charts-grid">
+                <div class="chart-container">
+                    <canvas id="growthChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="industryChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Frame La Carrera -->
+        <div id="carrera" class="frame">
+            <h2>Plan de Estudios y Habilidades</h2>
+            <p>
+                Nuestro programa está diseñado para formar profesionales completos en Inteligencia Artificial, 
+                con habilidades técnicas y prácticas desde el primer día. Aprenderás las tecnologías más demandadas 
+                por la industria tecnológica nacional e internacional.
+            </p>
+
+            <h3>🎯 Tecnologías que Dominarás</h3>
+            <div class="companies-grid">
+                <div class="company-item">Python</div>
+                <div class="company-item">TensorFlow</div>
+                <div class="company-item">PyTorch</div>
+                <div class="company-item">Machine Learning</div>
+                <div class="company-item">Deep Learning</div>
+                <div class="company-item">Big Data</div>
+                <div class="company-item">Cloud Computing</div>
+                <div class="company-item">SQL & NoSQL</div>
+            </div>
+
+            <div class="images-grid">
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800" alt="Programación">
+                    <div class="image-card-content">
+                        <h4>Programación Avanzada</h4>
+                        <p>Python, JavaScript, y frameworks modernos</p>
+                    </div>
+                </div>
+
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?w=800" alt="Matemáticas">
+                    <div class="image-card-content">
+                        <h4>Matemáticas para IA</h4>
+                        <p>Álgebra lineal, cálculo y estadística aplicada</p>
+                    </div>
+                </div>
+
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800" alt="Proyectos">
+                    <div class="image-card-content">
+                        <h4>Proyectos Reales</h4>
+                        <p>Desarrolla soluciones para empresas reales</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart-container" style="margin-top: 2rem;">
+                <canvas id="skillsChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Frame Oportunidades Hidalgo -->
+        <div id="hidalgo" class="frame">
+            <h2>Oportunidades en Hidalgo y Región Central</h2>
+            <p>
+                El estado de Hidalgo está experimentando un crecimiento tecnológico acelerado. Su ubicación estratégica 
+                entre la Ciudad de México, Querétaro y Puebla lo convierte en un hub ideal para profesionales de 
+                tecnología e Inteligencia Artificial.
+            </p>
+
+            <h3>🏢 Ecosistema Empresarial en la Región</h3>
+            <div class="highlight-box">
+                <h4>Pachuca y Zona Metropolitana</h4>
+                <p>Pachuca es la capital del estado y cuenta con infraestructura tecnológica en crecimiento. 
+                Empresas de TI, startups y organizaciones gubernamentales están invirtiendo en transformación digital 
+                y soluciones de IA. Startup Hidalgo y otros organismos fomentan el emprendimiento tecnológico local.</p>
+            </div>
+
+            <div class="highlight-box">
+                <h4>Corredor Industrial México-Pachuca</h4>
+                <p>El corredor que conecta la Ciudad de México con Pachuca alberga parques industriales y empresas 
+                manufactureras que están adoptando Industria 4.0, automatización e IA para optimizar sus procesos. 
+                Esto genera demanda constante de profesionales especializados.</p>
+            </div>
+
+            <h3>💼 Empresas y Sectores Demandantes</h3>
+            <ul>
+                <li><strong>Empresas de Desarrollo de Software:</strong> Codster, Grupo CSI, Radius Tech, Magokoro y otras compañías mexicanas con operaciones en la región central buscan desarrolladores de IA</li>
+                <li><strong>Instituciones Financieras:</strong> BBVA, Banorte y otras entidades bancarias están implementando IA para análisis predictivo, detección de fraudes y atención al cliente</li>
+                <li><strong>Consultoría Tecnológica:</strong> Deloitte, EY, Softtek y consultoras con presencia en la región requieren especialistas en IA y transformación digital</li>
+                <li><strong>Industria Automotriz:</strong> La cercanía con Querétaro (polo automotriz) abre oportunidades en IA aplicada a manufactura inteligente</li>
+                <li><strong>Sector Gubernamental:</strong> Gobierno estatal y municipal de Hidalgo están digitalizando servicios y requieren soluciones tecnológicas innovadoras</li>
+            </ul>
+
+            <h3>🌐 Conexión con Ciudades Tecnológicas</h3>
+            <div class="companies-grid">
+                <div class="company-item">Ciudad de México (80 km)</div>
+                <div class="company-item">Querétaro (190 km)</div>
+                <div class="company-item">Puebla (165 km)</div>
+                <div class="company-item">Toluca (140 km)</div>
+            </div>
+
+            <p style="margin-top: 1.5rem;">
+                Nuestra ubicación estratégica te permite acceder a oportunidades laborales en cuatro de los mercados 
+                tecnológicos más importantes de México, con opciones de trabajo presencial, híbrido y remoto.
+            </p>
+
+            <div class="images-grid" style="margin-top: 2rem;">
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800" alt="Ciudad tecnológica">
+                    <div class="image-card-content">
+                        <h4>Ubicación Estratégica</h4>
+                        <p>Acceso a los principales centros tecnológicos</p>
+                    </div>
+                </div>
+
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800" alt="Startups">
+                    <div class="image-card-content">
+                        <h4>Ecosistema Startup</h4>
+                        <p>Emprendimiento tecnológico en crecimiento</p>
+                    </div>
+                </div>
+
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800" alt="Innovación">
+                    <div class="image-card-content">
+                        <h4>Industria 4.0</h4>
+                        <p>Manufactura inteligente y automatización</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart-container" style="margin-top: 2rem;">
+                <canvas id="regionalChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Frame Futuro -->
+        <div id="futuro" class="frame">
+            <h2>Tu Futuro Profesional</h2>
+            <p>
+                Los egresados de nuestra carrera tienen acceso a múltiples oportunidades laborales con salarios competitivos 
+                y proyección internacional. El futuro de la tecnología es ahora, y tú puedes ser parte de esta transformación.
+            </p>
+
+            <div class="charts-grid">
+                <div class="stat-card">
+                    <h3>95%</h3>
+                    <p>Tasa de empleabilidad en México</p>
+                </div>
+                <div class="stat-card">
+                    <h3>$35K</h3>
+                    <p>Salario inicial promedio (USD)</p>
+                </div>
+                <div class="stat-card">
+                    <h3>390+</h3>
+                    <p>Vacantes activas en IA en México</p>
+                </div>
+            </div>
+
+            <h3>🎯 Áreas de Especialización</h3>
+            <ul>
+                <li><strong>Machine Learning Engineer:</strong> Diseño e implementación de modelos de aprendizaje automático</li>
+                <li><strong>Data Scientist:</strong> Análisis avanzado de datos y generación de insights de negocio</li>
+                <li><strong>AI Developer:</strong> Desarrollo de aplicaciones con inteligencia artificial integrada</li>
+                <li><strong>Computer Vision Specialist:</strong> Sistemas de reconocimiento de imágenes y video</li>
+                <li><strong>NLP Engineer:</strong> Procesamiento de lenguaje natural y chatbots inteligentes</li>
+                <li><strong>AI Consultant:</strong> Asesoría en transformación digital e implementación de IA</li>
+            </ul>
+
+            <div class="chart-container" style="margin-top: 2rem;">
+                <canvas id="careerChart"></canvas>
+            </div>
+
+            <div class="images-grid" style="margin-top: 2rem;">
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800" alt="Trabajo en equipo">
+                    <div class="image-card-content">
+                        <h4>Empresas Líderes</h4>
+                        <p>Bolsa de trabajo con empresas tecnológicas</p>
+                    </div>
+                </div>
+
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800" alt="Networking">
+                    <div class="image-card-content">
+                        <h4>Red de Egresados</h4>
+                        <p>Networking profesional regional y nacional</p>
+                    </div>
+                </div>
+
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800" alt="Crecimiento">
+                    <div class="image-card-content">
+                        <h4>Crecimiento Continuo</h4>
+                        <p>Programas de actualización y certificaciones</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 CBTIS 222 - Todos los derechos reservados</p>
+        <p>Centro de Bachillerato Tecnológico Industrial y de Servicios No. 222</p>
+        <p>Pachuca de Soto, Hidalgo, México</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
